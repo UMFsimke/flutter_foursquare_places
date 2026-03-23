@@ -12,6 +12,23 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appTitle => 'Flutter Demo';
 
   @override
+  String get placesListTitle => 'Find a place';
+
+  @override
+  String get placesSearchHint => 'Search';
+
+  @override
+  String get placeDetailsTitle => 'Details';
+
+  @override
+  String get badInternetConnectionErrorMessage =>
+      'There are issues with your internet connection';
+
+  @override
+  String get unexpectedErrorMessage =>
+      'Ooops, something went wrong. Please try again later.';
+
+  @override
   String get homePageTitle => 'Home Page';
 
   @override
@@ -53,8 +70,4 @@ class AppLocalizationsEn extends AppLocalizations {
     });
     return '$_temp0';
   }
-
-  @override
-  String get unexpectedErrorMessage =>
-      'Ooops, something went wrong. Please try again later.';
 }

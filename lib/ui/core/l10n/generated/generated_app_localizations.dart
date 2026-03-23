@@ -104,6 +104,36 @@ abstract class AppLocalizations {
   /// **'Flutter Demo'**
   String get appTitle;
 
+  /// Title for the list of places screen
+  ///
+  /// In en, this message translates to:
+  /// **'Find a place'**
+  String get placesListTitle;
+
+  /// Hint for a filter places text field
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get placesSearchHint;
+
+  /// Title for the place details screen
+  ///
+  /// In en, this message translates to:
+  /// **'Details'**
+  String get placeDetailsTitle;
+
+  /// Error message presented when user has issues with internet connection
+  ///
+  /// In en, this message translates to:
+  /// **'There are issues with your internet connection'**
+  String get badInternetConnectionErrorMessage;
+
+  /// Error message presented when some error occurrs without us being able to parse it properly
+  ///
+  /// In en, this message translates to:
+  /// **'Ooops, something went wrong. Please try again later.'**
+  String get unexpectedErrorMessage;
+
   /// Title of the home page
   ///
   /// In en, this message translates to:
@@ -133,12 +163,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{gender, select, male{he} female{she} other{other}}'**
   String pronoun({required String gender});
-
-  /// Error message presented when some error occurrs without us being able to parse it properly
-  ///
-  /// In en, this message translates to:
-  /// **'Ooops, something went wrong. Please try again later.'**
-  String get unexpectedErrorMessage;
 }
 
 class _AppLocalizationsDelegate

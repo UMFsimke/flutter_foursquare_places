@@ -4,6 +4,26 @@
     "@appTitle": {
         "description": "Name of the app"
     },
+    "placesListTitle": "Find a place",
+    "@placesListTitle": {
+        "description": "Title for the list of places screen"
+    },
+    "placesSearchHint": "Search",
+    "@placesSearchHint": {
+        "description": "Hint for a filter places text field"
+    },
+    "placeDetailsTitle": "Details",
+    "@placeDetailsTitle": {
+        "description": "Title for the place details screen"
+    },
+    "badInternetConnectionErrorMessage": "There are issues with your internet connection",
+    "@badInternetConnectionErrorMessage": {
+        "description": "Error message presented when user has issues with internet connection"
+    },
+    "unexpectedErrorMessage": "Ooops, something went wrong. Please try again later.",
+    "@unexpectedErrorMessage": {
+        "description": "Error message presented when some error occurrs without us being able to parse it properly"
+    },
     "homePageTitle": "Home Page",
     "@homePageTitle": {
         "description": "Title of the home page"
@@ -40,9 +60,5 @@
                 "type": "String"
             }
         }
-    },
-    "unexpectedErrorMessage": "Ooops, something went wrong. Please try again later.",
-    "@unexpectedErrorMessage": {
-        "description": "Error message presented when some error occurrs without us being able to parse it properly"
     }
 }

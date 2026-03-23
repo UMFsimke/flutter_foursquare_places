@@ -11,4 +11,7 @@ final class SecretsRepositoryImpl implements SecretsRepository {
 
   @override
   String get baseUrl => _envService.baseUrl;
+
+  @override
+  String get foursquareAuthKey => _envService.foursquareAuthKey;
 }
