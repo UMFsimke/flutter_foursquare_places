@@ -1,0 +1,48 @@
+{
+    "@@locale": "en",
+    "appTitle": "Flutter Demo",
+    "@appTitle": {
+        "description": "Name of the app"
+    },
+    "homePageTitle": "Home Page",
+    "@homePageTitle": {
+        "description": "Title of the home page"
+    },
+    "counterMessage": "You have pushed the button {counter} times",
+    "@counterMessage": {
+        "description": "Message describing how many times user pushed increment button",
+        "placeholders": {
+            "counter": {
+                "type": "int",
+                "format": "compact"
+            }
+        }
+    },
+    "actionIncrement": "Increment",
+    "@actionIncrement": {
+        "description": "Title for the increment counter action"
+    },
+    "watchedEpisodes": "{numberOfEpisodesWatched, plural, =0{I did not watch any episode last night} =1{I did watch one episode} other{I did watch {numberOfEpisodesWatched} episodes last night}}",
+    "@watchedEpisodes": {
+        "description": "Episodes watched last night",
+        "placeholders": {
+            "numberOfEpisodesWatched": {
+                "type": "int",
+                "format": "compact"
+            }
+        }
+    },
+    "pronoun": "{gender, select, male{he} female{she} other{other}}",
+    "@pronoun": {
+        "description": "Various pronouns based on gender",
+        "placeholders": {
+            "gender": {
+                "type": "String"
+            }
+        }
+    },
+    "unexpectedErrorMessage": "Ooops, something went wrong. Please try again later.",
+    "@unexpectedErrorMessage": {
+        "description": "Error message presented when some error occurrs without us being able to parse it properly"
+    }
+}

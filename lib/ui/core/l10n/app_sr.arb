@@ -1,0 +1,10 @@
+{
+    "@@locale": "sr",
+    "appTitle": "Flutter Demo",
+    "homePageTitle": "Početna strana",
+    "counterMessage": "Pritisnuli ste dugme {counter} puta",
+    "actionIncrement": "Povećaj",
+    "watchedEpisodes": "{numberOfEpisodesWatched, plural, =0{Nisam gledao nijednu epizodu sinoc} =1{Gledao sam jednu epizodu sinoc} =2{Gledao sam dve epizode sinoc} other{Gledao sam {numberOfEpisodesWatched} epizode sinoc}}",
+    "pronoun": "{gender, select, musko{on} zensko{ona} other{drugo}}",
+    "unexpectedErrorMessage": "Ups, došlo je do neočekivane greške. Molimo pokušajte kasnije."
+}
