@@ -4,6 +4,7 @@ import 'package:flutter_tide_interview/domain/model/place.dart';
 import 'package:flutter_tide_interview/ui/places/list/bloc/places_list_event.dart';
 import 'package:flutter_tide_interview/ui/places/list/bloc/places_list_state.dart';
 import 'package:flutter_tide_interview/utils/result.dart';
+import 'package:flutter_tide_interview/utils/transformer/debounce_transformer.dart';
 import 'package:injectable/injectable.dart';
 
 @injectable
@@ -14,7 +15,10 @@ class PlacesListBloc extends Bloc<PlacesListEvent, PlacesListState> {
     : _placesRepository = placesRepository,
       super(PlacesListState.initial()) {
     on<PlacesListAppeared>(_fetchInitialData);
-    on<PlacesListQueryChanged>(_onQueryChanged);
+    on<PlacesListQueryChanged>(
+      _onQueryChanged,
+      transformer: debounce(Duration(milliseconds: 400)),
+    );
     on<PlacesListScrolledNearEnd>(_onScrolledNearEnd);
   }
 
